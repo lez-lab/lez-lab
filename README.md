@@ -1,33 +1,34 @@
-# LEZ Lab 🧪
+# LEZ Lab 🦎
 
-A living learning lab for the [Logos Execution Zone](https://github.com/logos-blockchain/logos-execution-zone) — a privacy-first programmable L2 with hybrid public/private state.
+A learning hub and living tracker for the Logos Execution Zone.
 
-## What is this?
+LEZ is a privacy-first programmable L2 where programs handle public and private state in the same execution environment, with ZK proofs enforced at the protocol level — not the application layer.
 
-This repo tracks everything being built on and around LEZ. Every time a new feature ships or a new program is deployed, LEZ Lab tests it, documents it, and builds tools to help you understand it.
+This repo exists so anyone who wants to understand LEZ has a place to start. As the protocol evolves and the ecosystem grows, everything shows up here: documented, explained, and runnable where possible.
 
-**Who is this for?**
-- Developers who want to build on LEZ and need working examples
-- Anyone curious about how ZK-based private execution works in practice
-- Contributors wanting to understand the LEZ protocol before diving into the codebase
+## Where to start
 
-## What's inside
+If you are new to LEZ, start in `learn/`. It covers the protocol from the ground up — architecture, accounts, execution model, and how to write programs.
 
-| Folder | What's here |
+If you already know the basics, browse `programs/` and `tools/` to see what has been built and how it works.
+
+## Structure
+
+| Folder | What is here |
 |--------|-------------|
-| `features/` | One folder per LEZ protocol feature — explained and runnable |
-| `programs/` | Ecosystem programs built on LEZ (AMM, multisig, registry, etc.) |
+| `learn/` | Protocol deep dives — architecture, accounts, execution, keys, programs |
+| `features/` | Protocol features documented and runnable as they ship |
+| `programs/` | Ecosystem programs with descriptions and examples |
 | `tools/` | Dev tools to explore, debug, and interact with LEZ |
+| `ecosystem/` | The integration layer — module, wallet UI, blockchain UI |
+| `.claude/` | AI agent skill for working with this repo and the LEZ ecosystem |
 
-## Getting started
+## For AI agents
 
-→ Start with [`features/block-context`](./features/block-context/) — the first feature tracked here.
+A skill file lives at `.claude/lez-lab-skill.md`. Load it to get instant context on the LEZ ecosystem, repo structure, and how to contribute.
 
-## About LEZ
+## About
 
-LEZ is a programmable L2 with protocol-level privacy:
-- Hybrid public/private state — programs handle both in the same execution environment
-- Privacy is enforced at the protocol level via ZKPs (Risc0 / RISC-V), not the application layer
-- Same bytecode executes in both public and private contexts
+Started by a LEZ contributor as a public learning resource for developers who want to understand the protocol, follow its development, and start building before the official docs exist.
 
-→ [LEZ GitHub](https://github.com/logos-blockchain/logos-execution-zone)
+Site: https://lez-lab.github.io
